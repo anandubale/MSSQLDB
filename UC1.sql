@@ -1,4 +1,6 @@
-insert into employee_payroll1(name,salary,startDate) Values('Anand',54555,GetDate())
+alter table employee_payroll1 add Gender char(1)
+
+update employee_payroll1 set Gender ='M' where name ='bill' or name = 'Anand'
 
 select* 
 from employee_payroll1
